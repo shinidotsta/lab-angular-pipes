@@ -1,0 +1,31 @@
+<h1>Pipes in Angular</h1>
+<div class="main">
+    <div class="date">
+        <h2>Date Pipes </h2>
+        <p> Full date:{{date1}}<br> Short date:{{date1|date:'ShortDate'}} <br> medium date:{{date1|date:'medium'}}<br>full date:{{date1|date:'fulldate'}}
+            <br>Short Time:{{date1|date:'shortTime'}}<br> Medium Time:{{date1|date:'mediumTime'}} <br> Full Time:{{date1|date:'fullTime'}}
+        </p>
+    </div>
+    <div class="number">
+        <h2>Number pipes</h2>
+        <p>No formatting:{{number1|number}} <br> 2 Decimal places: {{number1|number:'3.2-5'}}</p>
+    </div>
+    <div class="currency">
+        <h2>Currency Pipes</h2>
+        <p>No formatting:{{number1}}<br> USD Dollar($):{{number1|currency:'USD'}}<br> USD Dollar:{{number1|currency:'USD':'code'}}<br>
+           INR():{{number1|currency:'INR'}}
+            <br> INR:{{number1|currency:'INR':'code'}}
+        </p>
+    </div>
+
+    <div class="string">
+        <h2>String Related Pipes</h2>
+        <p>Actual message:{{string1}} <br> Lower Case :{{string1|lowercase}} <br> Upper Case :{{string1|uppercase}}</p>
+    </div>
+
+    <div class="percentage">
+        <h2>Percentage Pipes</h2>
+        <p>2 place formatting:{{number1|percent:'5.2-5'}}</p> <br>
+
+    </div>
+</div>
